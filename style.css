@@ -254,6 +254,95 @@ b {
 	text-align: center;
 }
 
+.learn-and-time {
+	margin-bottom: 30px;
+}
+
+.goals {
+	padding-left: 30px;
+}
+
+.learn-and-time__wrapper:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.goals__list {
+	margin: 0;
+	padding: 0;
+}
+
+.goals__item {
+	position: relative;
+	padding-left: 25px;
+}
+
+.goals__item::before {
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: var(--blue);
+}
+
+.goals__item:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.goals__title {
+	margin: 0;
+	color: var(--blue);
+	font-weight: 300;
+	font-size: var(--fz-medium);
+}
+
+.time-training__wrapper {
+	padding-left: 30px;
+}
+
+.time-training__list {
+	margin: 0;
+	padding: 0;
+}
+
+.time-training__item {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-left: 25px;
+}
+
+.time-training__item::before {
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: var(--blue);
+}
+
+.time-training__item:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.time-training__title {
+	margin: 0;
+	color: var(--blue);
+	font-weight: 300;
+	font-size: var(--fz-medium);
+}
+
+.time-training__text {
+	color: var(--blue);
+	font-weight: 300;
+	font-size: var(--fz-medium);
+}
+
 @media screen and (min-width: 1024px) {
 	.about {
 		margin-bottom: 60px;
@@ -319,7 +408,7 @@ b {
 		width: 50%;
 	}
 	
-	.skills-and-i-use__wrapper:nth-child(2n+n) {
+	.skills-and-i-use__wrapper:not(:nth-child(2n)) {
 		margin-right: 30px;
 	}
 
@@ -327,7 +416,35 @@ b {
 		margin-bottom: 0;
 	}
 
+	.learn-and-time {
+		margin-bottom: 60px;
+	}
+
+	.learn-and-time__inner {
+		display: flex;
+	}
+	
+	.learn-and-time__wrapper {
+		width: 50%;
+	}
+	
+	.learn-and-time__wrapper:not(:nth-child(2n)) {
+		margin-right: 30px;
+	}
+
+	.learn-and-time__wrapper:not(:last-child) {
+		margin-bottom: 0;
+	}
+
 	.skills__title {
+		width: 40%;
+	}
+
+	.time-training__item {
+		justify-content: flex-start;
+	}
+
+	.time-training__title {
 		width: 40%;
 	}
 }
