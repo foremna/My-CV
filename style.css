@@ -162,6 +162,25 @@ a {
 	color: var(--white);
 }
 
+.education {
+	margin-bottom: 30px;
+}
+
+.education__wrapper {
+	padding-left: 30px;
+}
+
+.education__university {
+	margin: 0;
+	color: var(--blue);
+	font-weight: 300;
+	font-size: var(--fz-medium);
+}
+
+.education__university:not(:last-child) {
+	margin-bottom: 15px;
+}
+
 @media screen and (min-width: 1024px) {
 	.about__wrapper {
 		display: flex;
@@ -197,5 +216,9 @@ a {
 
 	.about__social-networks {
 		justify-content: flex-end;
+	}
+
+	.education {
+		margin-bottom: 60px;
 	}
 }
