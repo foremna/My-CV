@@ -24,6 +24,10 @@ a {
 	text-decoration: none;
 }
 
+b {
+	font-weight: 400;
+}
+
 *,
 *:before,
 *:after {
@@ -182,6 +186,74 @@ a {
 	margin-bottom: 15px;
 }
 
+.skills-and-i-use {
+	margin-bottom: 30px;
+}
+
+.skills-and-i-use__wrapper:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.skills {
+	padding-left: 30px;
+}
+
+.skills__list {
+	margin: 0;
+	padding: 0;
+}
+
+.skills__item {
+	display: flex;
+	align-items: center;
+}
+
+.skills__item:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.skills__title {
+	width: 60%;
+	margin: 0;
+	color: var(--blue);
+	font-weight: 300;
+	font-size: var(--fz-medium);
+}
+
+.dot {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: var(--gray);
+}
+
+.dot.dot--check {
+	background-color: var(--blue);
+}
+
+.dot:not(:last-child) {
+	margin-right: 5px;
+}
+
+.i-use {
+	padding-left: 30px;
+}
+
+.i-use__paragraph {
+	margin: 0 0 15px 0;
+	color: var(--blue);
+	font-weight: 300;
+	font-size: var(--fz-medium);
+}
+
+.i-use__mini-text {
+	display: block;
+	color: var(--blue);
+	font-weight: 300;
+	font-size: 14px;
+	text-align: center;
+}
+
 @media screen and (min-width: 1024px) {
 	.about {
 		margin-bottom: 60px;
@@ -233,5 +305,29 @@ a {
 
 	.education {
 		margin-bottom: 60px;
+	}
+
+	.skills-and-i-use {
+		margin-bottom: 60px;
+	}
+
+	.skills-and-i-use__inner {
+		display: flex;
+	}
+	
+	.skills-and-i-use__wrapper {
+		width: 50%;
+	}
+	
+	.skills-and-i-use__wrapper:nth-child(2n+n) {
+		margin-right: 30px;
+	}
+
+	.skills-and-i-use__wrapper:not(:last-child) {
+		margin-bottom: 0;
+	}
+
+	.skills__title {
+		width: 40%;
 	}
 }
