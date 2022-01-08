@@ -167,6 +167,14 @@ a {
 		display: flex;
 	}
 
+	.about__name {
+		font-size: var(--fz-huge);
+	}
+
+	.about__profession {
+		font-size: var(--fz-large);
+	}
+
 	.about__content {
 		padding: 0 0 0 30px;
 		border-top: none;
