@@ -11,6 +11,7 @@
 
 body {
 	margin: 0;
+	font-family: 'Roboto', 'Arial', sans-serif;
 	background-color: var(--white);
 }
 
@@ -58,4 +59,143 @@ a {
 	height: 2px;
 	background-color: var(--blue);
 	transform: translateY(-50%);
+}
+
+.about {
+	padding: 30px 0;
+	background-image: url("./img/bg.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.about__person {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
+	padding: 30px;
+	border: 1px solid var(--white);
+}
+
+.about__avatar {
+	margin-bottom: 15px;
+	width: 220px;
+	height: 220px;
+	object-fit: contain;
+	background-color: #fff;
+	border-radius: 50%;
+}
+
+.about__name {
+	margin-bottom: 10px;
+	color: var(--white);
+	font-weight: 300;
+	font-size: var(--fz-large);
+	text-align: center;
+}
+
+.about__profession {
+	color: var(--white);
+	font-weight: 300;
+	font-size: var(--fz-medium);
+	text-align: center;
+	white-space: nowrap;
+}
+
+.about__content {
+	padding-top: 30px;
+	border-top: 1px solid var(--white);
+}
+
+.about__content-wrapper {
+	padding-left: 15px;
+}
+
+.about__headline {
+	margin: 0 0 10px 0;
+	color: var(--white);
+	font-weight: 300;
+	font-size: var(--fz-large);
+}
+
+.about__description {
+	display: block;
+	margin-bottom: 30px;
+	color: var(--white);
+	font-size: var(--fz-small);
+}
+
+.about__info {
+	margin-bottom: 30px;
+}
+
+.about__str {
+	margin: 0 0 15px 0;
+}
+
+.about__title {
+	margin: 0 0 5px 0;
+	color: var(--white);
+	font-weight: 700;
+	font-size: var(--fz-small);
+}
+
+.about__text {
+	padding-left: 15px;
+	color: var(--white);
+	font-weight: 700;
+	font-size: var(--fz-small);
+}
+
+.about__social-networks {
+	display: flex;
+	justify-content: center;
+}
+
+.about__social-network:not(:last-child) {
+	margin-right: 30px;
+}
+
+.about__social-network svg {
+	width: 60px;
+	height: 60px;
+	color: var(--white);
+}
+
+@media screen and (min-width: 1024px) {
+	.about__wrapper {
+		display: flex;
+	}
+
+	.about__content {
+		padding: 0 0 0 30px;
+		border-top: none;
+		border-left: 1px solid var(--white);
+	}
+
+	.about__person {
+		margin: 0 30px 0 0;
+	}
+
+	.about__info {
+		width: 40%;
+	}
+
+	.about__str {
+		display: flex;
+		align-items: center;
+	}
+
+	.about__title {
+		width: 50%;
+	}
+
+	.about__text {
+		padding-left: 0;
+		width: 50%;
+	}
+
+	.about__social-networks {
+		justify-content: flex-end;
+	}
 }
