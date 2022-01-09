@@ -368,6 +368,96 @@ b {
 	font-size: var(--fz-medium);
 }
 
+.interests {
+	margin-bottom: 30px;
+}
+
+.interests__list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+}
+
+.interests__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.interests__item:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.interests__item--technology {
+	background-image: url("./img/technology.png");
+}
+
+.interests__item--fashion {
+	background-image: url("./img/fashion.png");
+}
+
+.interests__item--nature {
+	background-image: url("./img/nature.png");
+}
+
+.interests__item--books {
+	background-image: url("./img/books.png");
+}
+
+.interests__item .interests__text {
+	color: rgba(255, 255, 255, .7);
+	font-weight: 700;
+	font-size: var(--fz-medium);
+}
+
+.interests__item .interests__text:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.love-code {
+	display: block;
+	margin-bottom: 15px;
+	font-weight: 700;
+	font-size: var(--fz-small);
+	text-align: center;
+	background: -webkit-linear-gradient(to left, #4897B7 35%, #73FAFF 69%);
+	background: -moz-linear-gradient(to left, #4897B7 35%, #73FAFF 69%);
+	background: linear-gradient(to left, #4897B7 35%, #73FAFF 69%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 576px) {
+	.interests__list {
+		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.interests__item:not(:nth-child(2n)) {
+		margin-right: 15px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.interests__item:not(:nth-child(2n)) {
+		margin-right: 0;
+	}
+
+	.interests__item:not(:last-child) {
+		margin-right: 15px;
+	}
+}
+
 @media screen and (min-width: 1024px) {
 	.about {
 		margin-bottom: 60px;
@@ -474,6 +564,10 @@ b {
 	}
 
 	.experience {
+		margin-bottom: 60px;
+	}
+
+	.interests {
 		margin-bottom: 60px;
 	}
 }
