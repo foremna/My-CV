@@ -343,6 +343,31 @@ b {
 	font-size: var(--fz-medium);
 }
 
+.experience {
+	margin-bottom: 30px;
+}
+
+.experience__inner {
+	padding-left: 30px;
+}
+
+.experience__wrapper:not(:last-child) {
+	margin-bottom: 15px;
+}
+
+.experience__title {
+	margin: 0 0 5px 0;
+	color: var(--blue);
+	font-weight: 400;
+	font-size: var(--fz-medium);
+}
+
+.experience__text {
+	color: var(--blue);
+	font-weight: 300;
+	font-size: var(--fz-medium);
+}
+
 @media screen and (min-width: 1024px) {
 	.about {
 		margin-bottom: 60px;
@@ -446,5 +471,9 @@ b {
 
 	.time-training__title {
 		width: 40%;
+	}
+
+	.experience {
+		margin-bottom: 60px;
 	}
 }
