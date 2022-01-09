@@ -515,40 +515,24 @@ b {
 		margin-bottom: 60px;
 	}
 
-	.skills-and-i-use__inner {
+	.combo-inner {
 		display: flex;
 	}
 	
-	.skills-and-i-use__wrapper {
+	.combo-wrapper {
 		width: 50%;
 	}
 	
-	.skills-and-i-use__wrapper:not(:nth-child(2n)) {
+	.combo-wrapper:not(:nth-child(2n)) {
 		margin-right: 30px;
 	}
 
-	.skills-and-i-use__wrapper:not(:last-child) {
+	.combo-wrapper:not(:last-child) {
 		margin-bottom: 0;
 	}
 
 	.learn-and-time {
 		margin-bottom: 60px;
-	}
-
-	.learn-and-time__inner {
-		display: flex;
-	}
-	
-	.learn-and-time__wrapper {
-		width: 50%;
-	}
-	
-	.learn-and-time__wrapper:not(:nth-child(2n)) {
-		margin-right: 30px;
-	}
-
-	.learn-and-time__wrapper:not(:last-child) {
-		margin-bottom: 0;
 	}
 
 	.skills__title {
