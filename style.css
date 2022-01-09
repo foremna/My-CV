@@ -108,6 +108,7 @@ b {
 }
 
 .about__content {
+	position: relative;
 	padding-top: 30px;
 	border-top: 1px solid var(--white);
 }
@@ -165,6 +166,20 @@ b {
 	width: 60px;
 	height: 60px;
 	color: var(--white);
+}
+
+.language-list {
+	position: absolute;
+	top: 15px;
+	right: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.language-link {
+	color: var(--white);
+	font-weight: 300;
+	font-size: 14;
 }
 
 .education {
@@ -505,6 +520,10 @@ b {
 
 	.about__social-networks {
 		justify-content: flex-end;
+	}
+
+	.language-list {
+		top: 0;
 	}
 
 	.education {
