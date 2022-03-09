@@ -107,15 +107,6 @@ b {
 	border: 1px solid var(--white);
 }
 
-.about__avatar {
-	margin-bottom: 15px;
-	width: 220px;
-	height: 220px;
-	object-fit: contain;
-	background-color: #fff;
-	border-radius: 50%;
-}
-
 .about__name {
 	margin-bottom: 10px;
 	color: var(--white);
@@ -555,6 +546,7 @@ b {
 	
 	.about__wrapper {
 		display: flex;
+		align-items: center;
 	}
 
 	.about__name {
