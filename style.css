@@ -1,12 +1,14 @@
 :root {
 	--white: #F9F9F9;
 	--gray: #D7D7D7;
+	--aqua: #00b7ff;
 	--blue: #4D7382;
 	--light-blue: #CEF1FF;
 
 	--fz-huge: 48px;
 	--fz-large: 36px;
 	--fz-medium: 24px;
+	--fz-medium-xs: 22px;
 	--fz-small: 18px;
 }
 
@@ -352,24 +354,25 @@ b {
 	padding: 0;
 }
 
-.goals__item {
-	position: relative;
-	padding-left: 25px;
+.goals__sublist {
+	margin-top: 10px;
+	padding-left: 20px;
+	list-style-type: square;
 }
 
-.goals__item::before {
-	content: '';
-	position: absolute;
-	top: 10px;
-	left: 0;
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	background-color: var(--blue);
+.goals__subitem {
+	font-size: var(--fz-medium-xs);
+}
+
+.goals__item {
+	position: relative;
 }
 
 .goals__item:not(:last-child) {
 	margin-bottom: 15px;
+}
+.goals__subitem:not(:last-child) {
+	margin-bottom: 5px;
 }
 
 .goals__title {
@@ -379,49 +382,17 @@ b {
 	font-size: var(--fz-medium);
 }
 
-.time-training__wrapper {
-	padding-left: 30px;
+.goals__title a {
+	color: var(--aqua);
 }
 
-.time-training__list {
-	margin: 0;
-	padding: 0;
-}
-
-.time-training__item {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding-left: 25px;
-}
-
-.time-training__item::before {
-	content: '';
-	position: absolute;
-	top: 10px;
-	left: 0;
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	background-color: var(--blue);
-}
-
-.time-training__item:not(:last-child) {
-	margin-bottom: 15px;
-}
-
-.time-training__title {
-	margin: 0;
-	color: var(--blue);
-	font-weight: 300;
-	font-size: var(--fz-medium);
-}
-
-.time-training__text {
-	color: var(--blue);
-	font-weight: 300;
-	font-size: var(--fz-medium);
+.goals__tech {
+	display: inline;
+	background: -webkit-linear-gradient(to left, #a747c3 35%, #3fdce2 69%);
+	background: -moz-linear-gradient(to left, #a747c3 35%, #3fdce2 69%);
+	background: linear-gradient(to left, #a747c3 35%, #3fdce2 69%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .experience {
@@ -625,13 +596,6 @@ b {
 		width: 40%;
 	}
 
-	.time-training__item {
-		justify-content: flex-start;
-	}
-
-	.time-training__title {
-		width: 40%;
-	}
 
 	.experience {
 		margin-bottom: 60px;
